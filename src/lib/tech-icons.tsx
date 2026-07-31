@@ -18,9 +18,8 @@ import {
   SiLinux,
   SiVercel,
   SiGithub,
-  SiMicrosoft,
 } from "react-icons/si";
-import { ShieldCheck, Cloud, Server, Network } from "lucide-react";
+import { ShieldCheck, ShieldAlert, Cloud, Server, Network } from "lucide-react";
 
 type IconComponent = ComponentType<{ className?: string; style?: CSSProperties }>;
 
@@ -47,7 +46,7 @@ export const techIcons: Record<string, { Icon: IconComponent; color: string }> =
   "VPS Deployment": { Icon: Server, color: "#94A3B8" },
   "Trellix DLP / ePO": { Icon: ShieldCheck, color: "#34D399" },
   "Skyhigh CASB": { Icon: Cloud, color: "#34D399" },
-  "Microsoft 365 Security": { Icon: SiMicrosoft, color: "#00A4EF" },
+  "Microsoft 365 Security": { Icon: ShieldAlert, color: "#00A4EF" },
   "Endpoint Security": { Icon: ShieldCheck, color: "#34D399" },
   "Cisco CCNA / Networking": { Icon: Network, color: "#34D399" },
 };
