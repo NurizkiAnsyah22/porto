@@ -1,0 +1,53 @@
+import type { ComponentType, CSSProperties } from "react";
+import {
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiTailwindcss,
+  SiHtml5,
+  SiNodedotjs,
+  SiExpress,
+  SiLaravel,
+  SiPhp,
+  SiPostgresql,
+  SiMysql,
+  SiPrisma,
+  SiMongodb,
+  SiDocker,
+  SiLinux,
+  SiVercel,
+  SiGithub,
+  SiMicrosoft,
+} from "react-icons/si";
+import { ShieldCheck, Cloud, Server, Network } from "lucide-react";
+
+type IconComponent = ComponentType<{ className?: string; style?: CSSProperties }>;
+
+export const techIcons: Record<string, { Icon: IconComponent; color: string }> = {
+  React: { Icon: SiReact, color: "#61DAFB" },
+  "Next.js": { Icon: SiNextdotjs, color: "#EDEDED" },
+  TypeScript: { Icon: SiTypescript, color: "#3178C6" },
+  JavaScript: { Icon: SiJavascript, color: "#F7DF1E" },
+  "Tailwind CSS": { Icon: SiTailwindcss, color: "#38BDF8" },
+  "HTML5 / CSS3": { Icon: SiHtml5, color: "#E34F26" },
+  "Node.js": { Icon: SiNodedotjs, color: "#3C873A" },
+  "Express.js": { Icon: SiExpress, color: "#C7C7C7" },
+  Laravel: { Icon: SiLaravel, color: "#FF2D20" },
+  PHP: { Icon: SiPhp, color: "#8892BF" },
+  "REST API": { Icon: Server, color: "#94A3B8" },
+  PostgreSQL: { Icon: SiPostgresql, color: "#4169E1" },
+  MySQL: { Icon: SiMysql, color: "#4479A1" },
+  "Prisma ORM": { Icon: SiPrisma, color: "#C7C7C7" },
+  MongoDB: { Icon: SiMongodb, color: "#47A248" },
+  Docker: { Icon: SiDocker, color: "#2496ED" },
+  Linux: { Icon: SiLinux, color: "#FCC624" },
+  Vercel: { Icon: SiVercel, color: "#EDEDED" },
+  GitHub: { Icon: SiGithub, color: "#C7C7C7" },
+  "VPS Deployment": { Icon: Server, color: "#94A3B8" },
+  "Trellix DLP / ePO": { Icon: ShieldCheck, color: "#34D399" },
+  "Skyhigh CASB": { Icon: Cloud, color: "#34D399" },
+  "Microsoft 365 Security": { Icon: SiMicrosoft, color: "#00A4EF" },
+  "Endpoint Security": { Icon: ShieldCheck, color: "#34D399" },
+  "Cisco CCNA / Networking": { Icon: Network, color: "#34D399" },
+};
