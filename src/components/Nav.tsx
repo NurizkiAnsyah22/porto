@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import {
@@ -40,8 +41,8 @@ export function Nav() {
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-60 flex-col justify-between border-r border-border bg-surface/70 backdrop-blur-xl px-4 py-6 lg:flex">
         <div>
           <Link href="/" className="mb-8 flex items-center gap-3 px-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-accent text-sm font-bold text-accent-ink font-mono">
-              N
+            <span className="relative h-9 w-9 shrink-0 transition-transform duration-300 hover:scale-110">
+              <Image src="/logo.webp" alt="Nurizkiansyah" fill sizes="36px" className="object-contain" priority />
             </span>
             <span>
               <span className="block text-sm font-semibold">Nurizkiansyah</span>
@@ -120,8 +121,8 @@ export function Nav() {
       {/* Mobile top bar */}
       <header className="fixed inset-x-0 top-0 z-40 flex items-center justify-between border-b border-border bg-surface/80 px-4 py-3 backdrop-blur-xl lg:hidden">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-accent text-xs font-bold text-accent-ink font-mono">
-            N
+          <span className="relative h-8 w-8 shrink-0">
+            <Image src="/logo.webp" alt="Nurizkiansyah" fill sizes="32px" className="object-contain" priority />
           </span>
           <span className="text-sm font-semibold">Nurizkiansyah</span>
         </Link>
